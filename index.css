@@ -1,0 +1,23 @@
+img{
+    width: 200px;
+    height: auto;
+}
+aside{
+    width: 1200px;
+    margin: 24px;
+    padding: 10px;
+}
+main img {
+    width: 150PX;
+    height: auto;    
+    padding: 0px;
+    border-radius: 200px; 
+}
+footer{
+    margin-top: 12px;
+    border-top: 23px;
+    text-align: center;
+}
+p{
+    padding: 0;
+}
