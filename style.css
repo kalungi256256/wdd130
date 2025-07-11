@@ -38,8 +38,16 @@ nav a{
     font-weight: bold;
     transition: color o.2s;
 }
+nav{
+    background: #0b7783;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgb(44,62,80,0.07) ;
+}
 main{
     margin: 2rem auto;
+    max-width: 800px;
     background: #0b7783;
     padding: 2rem;
     border-radius: 10px;
