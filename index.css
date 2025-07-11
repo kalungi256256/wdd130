@@ -1,20 +1,25 @@
-img{
+
+aside{
+    width: auto;
+    margin: 0px;
+    border: solid 0.8px;
+    padding: 0%;
+    background-color:lightblue;
+    color: black;
+
+}
+aside img{
     width: 200px;
     height: auto;
 }
-aside{
-    width: auto;
-    margin: auto;
-    padding: 10px;
-}
-main img {
-    width: 150PX;
+main img{
+    width: 200px;
     height: auto;    
     padding: 0px;
-    border-radius: 200px; 
+    border-radius: 150px; 
 }
 footer{
-    margin-top: 12px;
+    margin-top: 15px;
     border-top: 23px;
     text-align: center;
 }
