@@ -1,7 +1,7 @@
 :root {
-    --primary: #1A3E6F;      /* Navy */
-    --secondary: #2C9AB7;    /* Teal */
-    --accent: #E6B85C;       /* Gold */
+    --primary: #1A3E6F;      
+    --secondary: #2C9AB7;    
+    --accent: #E6B85C;       
     --light: #f9fafc;
     --dark: #111;
     --shadow: 0 4px 24px rgba(26,62,111,0.12);
