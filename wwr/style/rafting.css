@@ -6,13 +6,19 @@
     --dark: #111;
     --shadow: 0 4px 24px rgba(26,62,111,0.12);
 }
+
 section img {
-    padding: 2rem;
+    padding: 0.5rem;
     margin: 1rem 0;
-    background:linear-gradient(to rigth, rgb(123, 177, 196),rgb(11, 143, 136));
-    border-radius: 8px;
+    background:linear-gradient(to right, rgb(123, 177, 196),rgb(11, 143, 136));
     box-shadow: var(--shadow);
-    width: 400px;
+    width: 150px;
+    display: flex;
+    height: auto;
+    columns: 1fr;    
+
+
+
 }
 body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -120,6 +126,11 @@ figcaption{
     height: 180px;
     object-fit: cover;
 }
+h1 h2{
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin: 0.5rem 0;
+}
  
 .trip-card h2 {
     margin: 1rem;
@@ -132,6 +143,15 @@ figcaption{
     color: var(--dark);
 }
  
+ .ges {
+    display: flex;
+    align-items: center;
+    margin: 1rem 1;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: auto;
+    height: auto;}
+    
 .adventures {
     display: flex;
     flex-wrap: wrap;
