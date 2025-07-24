@@ -45,7 +45,7 @@ header nav a {
 
 header nav a:hover {
     background: var(--accent2-color);
-    color: #fff; /* Ensured hover text color is visible */
+    color: rgb(59, 59, 59); /* Ensured hover text color is visible */
     box-shadow: 0 2px 8px rgba(253, 92, 99, 0.2);
 }
 
