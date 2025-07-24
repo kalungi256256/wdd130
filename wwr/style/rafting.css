@@ -123,7 +123,7 @@ header nav a:hover {
 .image {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     margin: 1rem 0;
 }
 
