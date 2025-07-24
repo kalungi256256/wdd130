@@ -1,4 +1,4 @@
-/* Updated CSS to meet the rubrics */
+
 
 /* Header */
 header {
@@ -274,7 +274,7 @@ footer img:hover {
 }
 
 .about-article{
-    background-image: url('../mages/rafting-hero.png');
+    background-image: url('../images/rafting-hero.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
