@@ -8,6 +8,10 @@
             --heading-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
 
+        body{
+            font-family: 'Poppins',sans-serif;
+        }
+
         /* Reset and Base Styles */
         * {
             margin: 0;
@@ -32,8 +36,8 @@
         }
 
         header img {
-            height: 12rem;
-            width: 11rem;
+            height: 8rem;
+            width: 7rem;
             margin-right: 1rem;
             margin-left: 2rem;
             border-radius: 50%;
@@ -75,26 +79,41 @@
         }
 
         /* Hero Section */
-        .hero {
-            position: relative;
-            text-align: center;
-            color: #fff;
-            padding: 2rem;
-        }
+    .hero article p {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    font-size: 1.0rem;
 
-        .hero img {
-            width: 100%;
-            height: auto;
-        }
+}
 
-        .hero h1 {
-            font-family: var(--heading-font);
-            background-color: var(--accent2-color);
-            color: #fff;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            display: inline-block;
-        }
+.hero article img {
+   
+    float: right;
+    width: 125px;
+    height: 100px;
+}
+
+.about p {
+    font-family: var(--body-font);
+    color: black;
+    font-size: 1.1rem;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent2-color);
+    color: #fff;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
 
         .hero article {
             position: relative;
@@ -241,6 +260,7 @@
             transition: transform 0.3s, box-shadow 0.3s;
             object-fit: cover;
             height: 200px;
+            float: right;
         }
 
         .image-clip img:hover {
@@ -256,12 +276,13 @@
         }
 
         .about-article {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            margin-top: 20px;
+            background-image: url(/wwr/images/rafting-hero.png) ;
+            background-repeat: no-repeat;
+            margin-top: 0px;
             padding: 2rem;
             color: #fff;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
+            border-radius: 20px;
             position: relative;
         }
 
