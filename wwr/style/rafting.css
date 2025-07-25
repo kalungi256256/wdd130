@@ -73,7 +73,7 @@ header nav a:hover {
 
 .hero article {
     position: relative;
-    margin: 1rem auto;
+    margin: 2px auto;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -84,7 +84,7 @@ header nav a:hover {
 /* History Section */
 .history-section {
     padding: 2rem;
-    margin: 2rem auto;
+    margin: 20px auto;
     max-width: 1200px;
     text-align: center;
 }
@@ -124,7 +124,7 @@ header nav a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin: rem 0;
+    margin: 3 0;
 }
 
 .image figure {
@@ -270,7 +270,7 @@ footer img:hover {
     text-align: center;
     font-family: var(--heading-font);
     color: white; 
-    margin-bottom: 1rem; 
+    margin-bottom: 10px; 
 }
 
 .about-article{
