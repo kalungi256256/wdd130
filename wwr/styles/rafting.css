@@ -276,7 +276,7 @@
         }
 
         .about-article {
-            background-image: url(/wwr/images/rafting-hero.png) ;
+            background-image: url('../images/rafting-hero.png');
             background-repeat: no-repeat;
             margin-top: 0px;
             padding: 2rem;
