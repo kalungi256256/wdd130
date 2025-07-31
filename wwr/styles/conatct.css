@@ -252,14 +252,18 @@ body {
         align-items: center;
     }
 
-    header img {
-        height: 50px;
+    header img  {
+        height: 100px;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
     }
 
     nav ul {
         display: flex;
         list-style: none;
         gap: 2rem;
+        
     }
 
     nav a {
@@ -297,56 +301,23 @@ body {
     }
 
     .social-icons {
+       width: 45px;
+       height: 45px;
         display: flex;
-        gap: 1.5rem;
+        gap: 1rem;
         align-items: center;
     }
 
-    .social-icon {
+    .social-icon img {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 45px;
-        height: 45px;
+            align-items: center;
+            justify-content: center;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         transition: all 0.3s ease;
         text-decoration: none;
     }
 
-    .social-icon.facebook {
-        background: #1877f2;
-        color: white;
-    }
 
-    .social-icon.facebook:hover {
-        background: #166fe5;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(24, 119, 242, 0.4);
-    }
-
-    .social-icon.whatsapp {
-        background: #25d366;
-        color: white;
-    }
-
-    .social-icon.whatsapp:hover {
-        background: #20ba5a;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-    }
-
-    .social-icon.messenger {
-        background: #006aff;
-        color: white;
-    }
-
-    .social-icon.messenger:hover {
-        background: #0056cc;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 106, 255, 0.4);
-    }
-
-    .social-icon svg {
-        width: 20px;
-        height: 20px;
-    }
+    
