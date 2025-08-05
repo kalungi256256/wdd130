@@ -24,13 +24,12 @@ h1{
 
 }
 h2{
-    color: #0b7783;
     padding: 0.7rem;
     letter-spacing: 1.8rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 10px;
-    background: linear-gradient(to right, #0b7783, #0b77 #0b7783);
+    
 }
 nav a{
     color: white;
