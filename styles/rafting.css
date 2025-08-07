@@ -11,16 +11,17 @@ body {
 }
 
 header {
-  background: #2c5aa0;
+  background: linear-gradient(to right, #2c5aa0, #1e4080);
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 header img {
   height: 100px;
-  width: 100px;
-  align-items: center;
-  justify-content: space-between;
+  width: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Navigation */
@@ -45,11 +46,11 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
-  gap: 1rem;
-  border: solid  rgb(130, 158, 196);
-  background: rgb(3, 68, 34);
-  height: 20px;
+  transition: all 0.3s ease;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-block;
 }
 
 nav a:hover,
@@ -68,13 +69,31 @@ nav a.active {
   overflow-wrap: break-word;   
 }
 /* Hero Section */
-.hero-contact {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('river-hero.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  padding: 4rem 1rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
 }
 
 .hero-contact h1 {
@@ -144,7 +163,7 @@ nav a.active {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  max-width: 1000px;
+  
   margin: 0 auto;
   text-align: center;
 }
@@ -155,6 +174,11 @@ nav a.active {
   border-radius: 10px;
   box-shadow: 0 2px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
 }
 
 .employee:hover {
@@ -169,12 +193,11 @@ nav a.active {
 }
 
 .employee img {
-  border-radius: 10%;
+  border-radius: 10px;
   object-fit: cover;
   margin-bottom: 1rem;
   height: 250px;
-  width: 200px;
-  ;
+  width: 100%;
 }
 
 .employee figcaption {
@@ -183,6 +206,8 @@ nav a.active {
 }
 .Awaits {
     text-align: center;
+    max-width: 85%;
+    margin: 0 auto ;
     padding: 2rem;
 }
 
@@ -586,4 +611,187 @@ aside img{
 .cta-button:hover {
     background: #e55a2b;
     transform: translateY(-2px);
+}
+
+.content{
+  display: flex;
+  gap: 20px;
+  max-width: 75%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.modify h1{
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
+
+.feature {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+}
+
+.feature img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  color: #2c5aa0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Newsletter Section Styles */
+.newsletter {
+  background: linear-gradient(135deg, #2c5aa0, #1e4080);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  margin: 3rem auto;
+  max-width: 1200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.newsletter h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.signup-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.signup-form .form-group {
+  position: relative;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 1.2rem;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.15);
+}
+
+.signup-form input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.signup-button {
+  background: #ff6b35;
+  color: white;
+  border: none;
+  padding: 1.2rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.signup-button:hover {
+  background: #e55a2b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Hero Overlay Enhancement */
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 3rem;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.hero-overlay h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-overlay p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Features Grid Enhancement */
+.features-grid {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+}
+
+/* Call to Action Enhancement */
+.cta-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(44, 90, 160, 0.85), rgba(30, 64, 128, 0.85));
+  z-index: 1;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
 }

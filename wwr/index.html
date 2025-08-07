@@ -3,48 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kalungi Isaac's WDD130 homepage with personal background and goals.">
     <meta name="author" content="Kalungi Isaac">
-
-    <title>Kalungi Isaac | WDD130</title>
+    <meta name="description" content="Experience thrilling white water rafting adventures with Kal White Water Rafting Company. Book your adventure today!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Home | Kal White Water Rafting Company</title>
     <link rel="stylesheet" href="../styles/rafting.css">
 </head>
 <body class="color">
     <header class="again">
+        <img src="../wwr/images/logo.png" alt="Rafting Company Logo" class="logo">
         <nav>
              <ul class="list">
-                <li><a href="index.html">🏡Home</a></li>
+                <li><a href="index.html" class="active">🏡Home</a></li>
                 <li><a href="about.html">🌐About</a></li>
-                <li><a href="trips.html" class="active">🐬Trips</a></li>
+                <li><a href="trips.html">🐬Trips</a></li>
                 <li><a href="contact.html">📞Contact Us</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <h1 class="h2">Kalungi Isaac | WDD130</h1>
-        <div class="employee">
-            <img src="../wwr/images/profile.jpg" alt="Profile picture of Kalungi Isaac" width="200" height="220">
+        <div class="hero">
+            <img src="/wwr/images/zeroraft.png" alt="White Water Rafting Adventure" class="hero-img">
+            <div class="hero-overlay">
+                <h1>Adventure Awaits You!</h1>
+                <p>Experience the Thrill of White Water Rafting</p>
+                <a href="trips.html" class="cta-button">View Our Trips</a>
+            </div>
         </div>
-        <p class="v">My name is Kalungi Isaac, a student at Brigham Young University Idaho, pursuing a degree in web design. 
-            I am passionate about creating innovative web solutions that enhance user experience and drive engagement.
-            With a strong foundation in HTML, CSS, and JavaScript, I am eager to apply my skills to real-world projects 
-            and contribute to the ever-evolving field of web development.</p>
-    </main>  
-    <aside>
-        <h2 class="h2">My State: Kampala Uganda</h2>
-        <div class="boot">
-            <img src="/wwr/images/kampalacity.jpg" alt="kampal city night" width="400">
-        </div>
-        <p class="v">My country,<strong>Uganda—the Pearl of Africa</strong>—is treasured for its natural beauty. 
-            Uganda is blessed with fertile land, where the sun can shine while it's raining, enriching the soil.
-            The Ugandan people are beautiful and welcoming, inviting everyone to experience the unique charm of our country.</p>
-    </aside> 
+
+        <section class="newsletter">
+            <h2>Stay Updated with Latest Adventures</h2>
+            <form class="signup-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="signup-button">Join Our Adventure Club</button>
+            </form>
+        </section>
+
+
+        <section class="features-grid">
+            <div class="feature">
+                <img src="../wwr/images/image1.jpg" alt="Thrilling Rapids">
+                <h3>Thrilling Adventures</h3>
+                <p>Experience heart-pumping action on our expertly guided white water rafting trips. Perfect for both beginners and experienced rafters.</p>
+            </div>
+            <div class="feature">
+                <img src="../wwr/images/image2.jpg" alt="Scenic Views">
+                <h3>Scenic Beauty</h3>
+                <p>Immerse yourself in breathtaking landscapes as you navigate through pristine waters and untouched wilderness.</p>
+            </div>
+            <div class="feature">
+                <img src="../wwr/images/safety-icon.png" alt="Safety First">
+                <h3>Safety First</h3>
+                <p>Our experienced guides and top-notch equipment ensure your adventure is as safe as it is exciting.</p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready for Your Next Adventure?</h2>
+                <p>Join us for an unforgettable rafting experience. Book your trip today!</p>
+                <a href="trips.html" class="cta-button">Explore Available Trips</a>
+            </div>
+        </section>
+    </main>
     
     <footer>
         <div class="footer-content">
             <div class="footer-left">
-                <p>&copy; 2020 All rights reserved🌴kaungi Isaac🌴Kampala Uganda.</p>   
+                <p>&copy; 2020 kal Whitewater Rafting Adventures. All rights reserved.</p>   
             </div>
             <div class="footer-icons">
                 <div class="facebook">
