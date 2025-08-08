@@ -571,13 +571,13 @@ aside img{
 }
 /* Call to Action Section */
 .cta-section {
-    background: #12517573;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-    margin-bottom: 40px;
-    background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: #12517573;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 40px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), /* lighter overlay */
     url("../wwr/images/rafting-hero.png");
   background-size: cover;
   background-position: center;
@@ -585,6 +585,7 @@ aside img{
   color: white; 
   padding: 50px; 
 }
+
 
 .cta-content h2 {
     font-size: 2.5rem;
@@ -795,3 +796,63 @@ aside img{
   max-width: 800px;
   margin: 0 auto;
 }
+
+.team {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.team-card .name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-card .role {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.team-card .quote {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Hover effect */
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific classes for custom tweaks */
+.lead-guide {
+    border-top: 4px solid #2c5aa0;
+}
+.senior-guide {
+    border-top: 4px solid #f39c12;
+}
+.customer-service {
+    border-top: 4px solid #27ae60;
+}
+
